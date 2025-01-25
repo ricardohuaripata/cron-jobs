@@ -9,7 +9,7 @@ const setupCronJobs = () => {
 };
 
 function scheduleCronJobSupabaseApolloRefresh() {
-  cron.schedule("* * * * *", async () => {
+  cron.schedule("0 0 */5 * *", async () => {
     const date = new Date();
 
     try {
